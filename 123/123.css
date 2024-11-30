@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c, #a5c6ff);
+    background-size: 200% 200%;
+    animation: gradient 5s ease infinite;
+    font-family: Arial, sans-serif;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button-container a {
+    display: block;
+    margin: 10px 0;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    background: #007BFF;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.button-container a:hover {
+    background: #0056b3;
+}
